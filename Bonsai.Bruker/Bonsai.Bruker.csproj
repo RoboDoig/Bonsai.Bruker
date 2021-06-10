@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Title>Bonsai.Bruker</Title>
+    <Description>A package for the Bonsai visual programming language.</Description>
+    <Authors></Authors>
+    <Copyright>Copyright ©  2021</Copyright>
+    <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageIcon></PackageIcon>
+    <PackageOutputPath></PackageOutputPath>
+    <PackageTags>Bonsai Rx Bonsai.Bruker</PackageTags>
+    <TargetFramework>net472</TargetFramework>
+    <Features>strict</Features>
+    <Version>0.1.0</Version>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bonsai.Core" Version="2.6.0" />
+    <PackageReference Include="OpenCV.Net" Version="3.4.0-build001" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PrairieLink">
+      <HintPath>..\..\..\..\..\..\Program Files\Prairie\Prairie View\Utilities\PrairieLink.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
